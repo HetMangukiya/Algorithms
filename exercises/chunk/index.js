@@ -11,7 +11,7 @@
 function chunk(array, size) {
   const newArray = [[]]
 
-  for (const [i, value] of array.entries()) {
+  for (const value of array) {
     const lastElementOfResult = newArray[newArray.length - 1];
     const lengthOfLastElement = lastElementOfResult.length
     if (lengthOfLastElement >= size) {
